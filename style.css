@@ -1,0 +1,97 @@
+body, html{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#contentBox {
+    box-sizing: border-box;
+    margin: auto;
+    width: 50vw;
+    /* padding-right: 2.3em; */
+}
+
+#background {
+    background-color: whitesmoke;
+    box-shadow: 0em 0em 3em rgba(34,31,32,0.5);
+}
+
+#background, #foreground {
+    margin:0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Nueue", sans-serif;
+}
+
+.backTop, .backMid, .backBottom{
+    display:flex;
+    font-size: 21em;
+    font-weight: 900;
+    line-height: 90%;
+    align-items: center;
+    color: rgb(224, 32, 44);
+}
+
+.backTop, .backBottom {
+    justify-content: space-between;
+}
+#name {
+    font-size: 1.5rem;
+    width: 7rem;
+    line-height: 1.5rem;
+}
+
+.quotes{
+    font-size: 1rem;
+    width: 10rem;
+    line-height: 1rem;
+    color: rgb(34,31,32);
+}
+.tilt {
+    transform: rotate(0.10turn);
+    line-height: -17em;
+}
+
+.upsideDown {
+    transform: rotate(0.5turn);
+}
+
+
+.backTop div, .backMid div, .backBottom div {
+    display: inline-block;
+    height: 100%;
+    letter-spacing: 0rem;
+}
+
+#foreground{
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    height: 130vh;
+    /* z-index: 12; */
+    font-size: 7em;
+    font-weight: 550;
+    line-height: 1em;
+    /* background-color: darkgreen; */
+    justify-content: space-between;
+    color:rgb(34,31,32);
+    /* height: 100vh; */
+    
+}
+
+#circle {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color:rgb(34,31,32);
+    margin-left: 8rem;
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#inline{
+    display: inline;
+}
+
