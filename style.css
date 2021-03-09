@@ -7,34 +7,45 @@ body, html{
     box-sizing: border-box;
     margin: auto;
     width: 50vw;
-    /* padding-right: 2.3em; */
+    font-family: "Helvetica Nueue", sans-serif;
 }
 
 #background {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     background-color: whitesmoke;
     box-shadow: 0em 0em 3em rgba(34,31,32,0.5);
 }
 
-#background, #foreground {
-    margin:0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    font-family: "Helvetica Nueue", sans-serif;
+#foreground{
+    position: absolute;
+    top: 0px;
+    font-size: 6.5em;
+    font-weight: 550;
+    line-height: 1em;
+    color:rgb(34,31,32);
+    height: 100%;
 }
 
-.backTop, .backMid, .backBottom{
+#foreBottom{
+    margin-top: 25vh;
+}
+
+#background > div{
     display:flex;
     font-size: 21em;
     font-weight: 900;
-    line-height: 90%;
+    line-height: 35vh;
     align-items: center;
     color: rgb(224, 32, 44);
 }
 
-.backTop, .backBottom {
+
+#background div:first-child, div:last-child {
     justify-content: space-between;
 }
+
 #name {
     font-size: 1.5rem;
     width: 7rem;
@@ -47,37 +58,15 @@ body, html{
     line-height: 1rem;
     color: rgb(34,31,32);
 }
+
 .tilt {
     transform: rotate(0.10turn);
-    line-height: -17em;
 }
 
 .upsideDown {
     transform: rotate(0.5turn);
 }
 
-
-.backTop div, .backMid div, .backBottom div {
-    display: inline-block;
-    height: 100%;
-    letter-spacing: 0rem;
-}
-
-#foreground{
-    position: absolute;
-    top: 0px;
-    width: 50%;
-    height: 130vh;
-    /* z-index: 12; */
-    font-size: 7em;
-    font-weight: 550;
-    line-height: 1em;
-    /* background-color: darkgreen; */
-    justify-content: space-between;
-    color:rgb(34,31,32);
-    /* height: 100vh; */
-    
-}
 
 #circle {
     display: inline-block;
@@ -91,7 +80,7 @@ body, html{
     text-align: center;
 }
 
-#inline{
+#foreBottom div:nth-child(2) div:first-child{
     display: inline;
 }
 
