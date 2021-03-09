@@ -5,23 +5,27 @@ body, html{
 }
 #contentBox {
     box-sizing: border-box;
-    margin: auto;
-    width: 50vw;
+    display: flex;
+    justify-content: center;
     font-family: "Helvetica Nueue", sans-serif;
 }
 
-#background {
-    box-sizing: border-box;
+#background, #foreground {
     display: flex;
     flex-direction: column;
+    
+}
+#background {
     background-color: whitesmoke;
     box-shadow: 0em 0em 3em rgba(34,31,32,0.5);
 }
 
 #foreground{
     position: absolute;
+    align-items: flex-start;
+    width: 42rem;
     top: 0px;
-    font-size: 6.5em;
+    font-size: 7em;
     font-weight: 550;
     line-height: 1em;
     color:rgb(34,31,32);
@@ -29,14 +33,14 @@ body, html{
 }
 
 #foreBottom{
-    margin-top: 25vh;
+    margin-top: 15rem;
 }
 
 #background > div{
     display:flex;
     font-size: 21em;
     font-weight: 900;
-    line-height: 35vh;
+    line-height: 0.9em;
     align-items: center;
     color: rgb(224, 32, 44);
 }
